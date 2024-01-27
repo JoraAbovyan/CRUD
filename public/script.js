@@ -1,15 +1,13 @@
-let Usname = document.getElementById("surname");
-let Usemail = document.getElementById("email");
-let Uspassword = document.getElementById("password");
-
-
+let usName = document.getElementById("usName");
+let usEmail = document.getElementById("usEmail");
+let usPassword = document.getElementById("usPassword");
 
 function sendData(){
-   fetch("http://localhost:3000/about", {
+   let res = fetch("http://localhost:3000/about", {
     method: "POST",
     headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
     },
-    body: JSON.stringify({ name: Usname.email , email: Usemail.value, password: Uspassword.value})
+    body: JSON.stringify({ name: usName.value, email: usEmail.value, password: usPassword.value})
    })
 }
