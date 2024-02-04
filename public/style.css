@@ -1,36 +1,100 @@
-.submit{
-        border: none;
-        outline: none;
-        background: #2f2f2f;
-        color: #fff;
-        font-size: 22px;
-        border-radius: 40px;
+/* style.css */
 
-        box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
-        position: relative;
+body {
+        display: flex;
+        font-family: 'Roboto', sans-serif;
+        background: #0c0c0c;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
         overflow: hidden;
-        cursor: pointer;
- }
-.body{
-        background-color: aquamarine;
-}
-.table tr td{
-        margin: 10px;
-        padding: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+    }
+    
+    table, th, td {
+        border: 1px solid #555;
+    }
+    
+    tr:first-child {
+        background-color: #0c0c0c; 
+        color: #fff;
+        font-size: 20px;
         text-align: center;
-        }
-
-        .update{
-        background-color: green;
-        margin: 10px;
-        padding: 5px;
-        width: 100px;
-        color: white;
-        }
-        .delete{
-        background-color: red;
-        margin: 10px;
-        width: 100px;
-        padding: 5px;
-        color: white;
-        }
+        padding: 10px 0;
+    }
+    
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #6a1b9a; /* Neon Purple */
+    }
+    
+    .update, .delete {
+        text-decoration: none;
+        padding: 12px 20px;
+        margin-right: 10px;
+        border: 2px solid #b28400; /* Darker Gold Border */
+        background-color: #b28400; /* Darker Gold */
+        color: #333;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+    }
+    
+    .update:hover, .delete:hover {
+        background-color: #a37000; /* Lighter Gold on hover */
+        border-color: #a37000; /* Change border color on hover */
+        color: #fff;
+    }
+    
+    
+    
+form {
+        width: 60%;
+        margin: 20px auto;
+        background-color: #d4af37; /* Gold */
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    
+    input {
+        margin: 8px 0;
+        padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #c0a100; /* Slightly Darker Gold */
+        color: #333; /* Dark Text on Gold */
+        border: 1px solid #b29600; /* Gold Border */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    
+    #id {
+        display: none; /* Hide the id input field if you don't want it to be visible */
+    }
+    
+    input[type="submit"] {
+        cursor: pointer;
+        background-color: #b28400; /* Darker Gold */
+        color: #333;
+        border: none;
+        border-radius: 8px;
+        padding: 14px 24px;
+        transition: background-color 0.3s;
+        box-shadow: 0 4px 6px rgba(178, 132, 0, 0.2);
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #a37000; /* Lighter Gold on hover */
+    }
+    
